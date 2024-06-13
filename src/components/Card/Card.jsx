@@ -15,6 +15,13 @@ const Card = ({ title, imageUrl, content, tags, published }) => {
         <div className="cont-info">
           <h4>{title}</h4>
           <p>{content}</p>
+          <h3>Tags</h3>
+          <ul>
+            {/* Set per rimuovere i duplicati */}
+            {[...new Set(tags)].map((tag, i) => (
+              <li key={`tag${i}`}>{tag}</li>
+            ))}
+          </ul>
           <button>
             <FaInfo />
             <FaLongArrowAltRight />

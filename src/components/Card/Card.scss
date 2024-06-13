@@ -13,6 +13,8 @@
 
   .cont-info {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 
     h4 {
       margin: 0 0 10px;
@@ -36,9 +38,25 @@
       font-size: 14px;
       cursor: pointer;
       text-transform: uppercase;
+      align-self: flex-start;
 
       &:hover {
         background-color: #e9ca7b;
+      }
+    }
+
+    h3 {
+      color: #333;
+    }
+
+    ul {
+      margin: 10px 0 20px;
+
+      li {
+        padding-left: 10px;
+        line-height: 1.5;
+        font-weight: 600;
+        color: #555;
       }
     }
   }
