@@ -19,7 +19,9 @@ const Card = ({ title, imageUrl, content, tags, published }) => {
           <ul>
             {/* Set per rimuovere i duplicati */}
             {[...new Set(tags)].map((tag, i) => (
-              <li key={`tag${i}`}>{tag}</li>
+              <li key={`tag${i}`}>
+                <span className={tag}>- {tag}</span>
+              </li>
             ))}
           </ul>
           <button>
