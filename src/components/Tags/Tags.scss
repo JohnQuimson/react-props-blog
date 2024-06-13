@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+
+  ul {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding-top: 10px;
+    list-style: none;
+
+    li {
+      padding: 0 20px;
+
+      .tag {
+        padding: 5px 20px;
+        color: white;
+      }
+
+      .html {
+        background-color: green;
+      }
+
+      .css {
+        background-color: pink;
+      }
+
+      .js {
+        background-color: orange;
+      }
+
+      .php {
+        background-color: violet;
+      }
+    }
+  }
+}

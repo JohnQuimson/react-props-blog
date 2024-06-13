@@ -1,5 +1,6 @@
-import Card from '../Card/Card';
 import './Main.css';
+import Card from '../Card/Card';
+import Tags from '../Tags/Tags';
 
 export const posts = [
   {
@@ -41,10 +42,16 @@ export const posts = [
 ];
 
 const Main = () => {
+  const allTags = posts.map((post) => post.tags).flat();
+  const filterTags = [...new Set(allTags)];
   return (
     <>
       <main className="main">
         <div className="container">
+          <Tags tags={filterTags} />
+        </div>
+
+        <div className="container-main">
           {posts.map((p, i) => (
             <Card
               key={`postCard${i}`}
