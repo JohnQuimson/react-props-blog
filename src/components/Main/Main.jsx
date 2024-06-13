@@ -14,7 +14,7 @@ export const posts = [
   {
     id: 2,
     title: 'Titolo 2',
-    image: '',
+    image: 'https://dummyimage.com/600x400/000/fff',
     content:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.',
     tags: ['js', 'css'],
@@ -49,7 +49,7 @@ const Main = () => {
             <Card
               key={`postCard${i}`}
               title={p.title}
-              image={p.image}
+              imageUrl={p.image}
               content={p.content}
               tags={p.tags}
               published={p.published}
