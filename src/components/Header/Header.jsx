@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <>
       <header className={headerStyle.header}>
-        <h1>React Template</h1>
+        <h1>I miei Post</h1>
       </header>
     </>
   );

@@ -1,11 +1,11 @@
-import './Card.css';
+import './Card.scss';
 import blogImage from '../../assets/image.png';
 import { FaInfo, FaLongArrowAltRight } from 'react-icons/fa';
 
 const Card = ({ title, imgageUrl, content, tags, published }) => {
   return (
     <>
-      <div className="card">
+      <div className={`card ${published ? 'published' : ''}`}>
         <div className="cont-img">
           <img src={blogImage} alt="img-600x400" />
         </div>
