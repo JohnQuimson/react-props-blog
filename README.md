@@ -1,6 +1,6 @@
 <h1 align="center">
   
- Template REACT
+ react-props-blog
   
 </h1>
 
@@ -26,9 +26,21 @@
   <a href="#used-technologies">Used technologies</a> 
 </p>
 
-![Blog Image](src/assets/blog.png)
+![screenshot](https://raw.githubusercontent.com/gist/mahmudinm/47588cab5af928d2c8a2976d90216ea7/raw/88f20c9d749d756be63f22b09f3c4ac570bc5101/programming.gif)
 
 ## Description
+
+Partendo dall'esercizio di ieri e dall'array di posts allegato, l'obiettivo è creare dinamicamente gli articoli all'interno della pagina.
+
+- I dati relativi a ciascun post dovranno essere passati come **props** ai componenti.
+
+- Ogni post ha una proprietà _published_, e gli articoli devono essere mostrati solo se questa proprietà è impostata su _true_.
+
+- Assegnate colori diversi ai tag dei posts, ad esempio: verde per html, rosa per css ecc…
+- Se un post non ha un'immagine, inserite un'immagine di default, potete utilizzare uno dei tanti servizi online come:
+  - https://placehold.co/
+  - https://picsum.photos/
+- Aggiungi una sezione nella pagina in cui mostrare la lista dei tag distinti senza ripetizioni.
 
 ## How To Use
 
@@ -52,8 +64,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 This software uses the following technologies:
 
-- [Node.js](https://)
-- [Express](https://)
+- [React](https://)
 
 > GitHub [@JohnQuimson](https://github.com/JohnQuimson) &nbsp;&middot;&nbsp;
 > Twitter [@John Henric Quimson](https://www.linkedin.com/in/john-henric-quimson-973827280/)
